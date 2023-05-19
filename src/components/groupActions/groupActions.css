@@ -1,0 +1,85 @@
+.layer {
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+.group-actions {
+  z-index: 12000;
+  /* position: relative; */
+  transition: 0.3s ease-in-out;
+}
+
+@media (width > 768px) {
+  .group-actions {
+    width: 80% !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .group-actions::before {
+    width: 100vw !important;
+    height: 100vh !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+  .group-actions.hide {
+    display: none;
+  }
+}
+.group-actions.hide {
+  height: 0 !important;
+  padding: 0 !important;
+}
+
+.row {
+  padding: 0 calc(var(--bs-gutter-x) * 0.5);
+}
+.row > * {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.col {
+  padding: 0 !important;
+}
+.row input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0;
+}
+
+.form-actions button {
+  font-size: 16px !important;
+}
+
+.action-2 {
+  text-decoration: underline !important;
+}
+
+.facebook-btn svg {
+  fill: #2467ec;
+}
+
+.converter {
+  position: relative;
+}
+.converter .alert {
+  position: absolute;
+  top: -64px;
+  left: 0;
+  width: 100%;
+
+  font-size: 14px;
+}
+
+.group-actions.pc .group-actions-close {
+  cursor: pointer;
+  top: -100px;
+  right: -30px;
+  color: #fff;
+}

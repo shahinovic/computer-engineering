@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .item {
+  font-size: 14px;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.header .item.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000000;
+}
+
+select,
+option,
+.author button {
+  font-size: 13px;
+  background-color: #f1f3f5 !important;
+  color: #212529 !important;
+}
+
+select {
+  width: fit-content !important;
+}
+
+.category {
+  font-size: 14px;
+}
+
+.posts .card .card-body .card-title {
+  font-size: 1.5em;
+}
+
+.posts .card .card-body .card-title span {
+  font-size: 15px !important;
+}
+.posts .card .card-body .card-title svg {
+  font-size: 1.1em !important;
+  font-weight: bold;
+}
+
+.posts .card .card-body .card-text {
+  font-size: 14px !important;
+}
+
+.actions-info {
+  font-size: 12px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.author-info {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.author-info .img-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author-info .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.author-info .info {
+  padding-top: 10px;
+}
+.author-info h3 {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.author-info p {
+  font-size: 12px;
+}
+
+.author button {
+  border: none !important ;
+}
+.posts-cards {
+  flex-grow: 1 !important;
+}
+
+.posts-cards .card {
+  flex-grow: 1 !important;
+}

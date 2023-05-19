@@ -1,0 +1,28 @@
+.user-info {
+  width: 300px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.user-info .location .location-input {
+  border-bottom: 1px solid #ccc;
+}
+
+.user-info .location .location-input input {
+  all: unset;
+}
+
+.user-info .location .location-info svg {
+  font-size: 4em;
+  height: fit-content;
+}
+
+.recommended-groups-card button.follow {
+  background-color: #f1f3f5 !important;
+  font-size: 15px;
+}
+
+.recommended-groups-card button.follow.active {
+  background-color: #000 !important;
+  color: #fff !important;
+}
